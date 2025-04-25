@@ -1,0 +1,452 @@
+2025-04-25 20:40:39,500 - ai_news_automation - INFO - Starting AI News Automation process
+2025-04-25 20:40:39,500 - ai_news_automation - INFO - Step 1: Fetching news articles
+2025-04-25 20:40:39,547 - news_fetcher - INFO - Fetching news for query: artificial intelligence
+2025-04-25 20:40:40,527 - news_fetcher - INFO - Retrieved 7 articles for query: artificial intelligence
+2025-04-25 20:40:40,528 - news_fetcher - INFO - Fetching news for query: machine learning
+2025-04-25 20:40:41,507 - news_fetcher - INFO - Retrieved 7 articles for query: machine learning
+2025-04-25 20:40:41,508 - news_fetcher - INFO - Fetching news for query: AI technology
+2025-04-25 20:40:42,465 - news_fetcher - INFO - Retrieved 7 articles for query: AI technology
+2025-04-25 20:40:42,466 - news_fetcher - INFO - Fetching news for query: neural networks
+2025-04-25 20:40:43,425 - news_fetcher - INFO - Retrieved 5 articles for query: neural networks
+2025-04-25 20:40:43,426 - news_fetcher - INFO - Fetching news for query: deep learning
+2025-04-25 20:40:44,396 - news_fetcher - INFO - Retrieved 7 articles for query: deep learning
+2025-04-25 20:40:44,396 - news_fetcher - INFO - Fetching news for query: large language models
+2025-04-25 20:40:45,346 - news_fetcher - INFO - Retrieved 7 articles for query: large language models
+2025-04-25 20:40:45,347 - news_fetcher - INFO - Fetching news for query: generative AI
+2025-04-25 20:40:45,641 - news_fetcher - INFO - Retrieved 7 articles for query: generative AI
+2025-04-25 20:40:45,642 - news_fetcher - INFO - Final article count after filtering: 20
+2025-04-25 20:40:45,648 - news_fetcher - INFO - Saved 20 articles to latest_ai_news.json
+2025-04-25 20:40:45,648 - ai_news_automation - INFO - Fetched 20 articles
+2025-04-25 20:40:45,648 - ai_news_automation - INFO - Step 2: Processing articles with Claude
+2025-04-25 20:40:45,835 - claude_processor - INFO - Loaded 20 articles from latest_ai_news.json
+2025-04-25 20:40:45,835 - claude_processor - INFO - Asking Claude to select top 3 articles from 20 total articles
+2025-04-25 20:40:48,086 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 20:40:48,095 - claude_processor - INFO - Claude selected 3 articles
+2025-04-25 20:40:48,095 - claude_processor - INFO - Asking Claude to format 3 articles into a tweet
+2025-04-25 20:40:55,012 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 20:40:55,015 - claude_processor - INFO - Claude generated tweet text (139 characters)
+2025-04-25 20:40:55,016 - claude_processor - INFO - Saved tweet to tweet_content.txt
+2025-04-25 20:40:55,016 - ai_news_automation - INFO - Generated tweet (139 characters)
+2025-04-25 20:40:55,016 - ai_news_automation - INFO - Step 3: Posting to Twitter
+2025-04-25 20:40:55,021 - twitter_poster - INFO - Read tweet from tweet_content.txt (139 characters)
+2025-04-25 20:40:55,044 - twitter_poster - INFO - Posting tweet to Twitter
+2025-04-25 20:40:55,369 - twitter_poster - INFO - Tweet posted successfully. Tweet ID: 1915717651986616738
+2025-04-25 20:40:55,371 - ai_news_automation - INFO - Posted tweet successfully. Tweet ID: 1915717651986616738
+2025-04-25 20:40:55,374 - ai_news_automation - INFO - AI News Automation completed successfully in 15.87 seconds
+2025-04-25 20:42:09,239 - ai_news_automation - INFO - Starting AI News Automation process
+2025-04-25 20:42:09,239 - ai_news_automation - INFO - Step 1: Fetching news articles
+2025-04-25 20:42:09,321 - news_fetcher - INFO - Fetching news for query: artificial intelligence
+2025-04-25 20:42:09,595 - news_fetcher - INFO - Retrieved 7 articles for query: artificial intelligence
+2025-04-25 20:42:09,595 - news_fetcher - INFO - Fetching news for query: machine learning
+2025-04-25 20:42:09,880 - news_fetcher - INFO - Retrieved 7 articles for query: machine learning
+2025-04-25 20:42:09,880 - news_fetcher - INFO - Fetching news for query: AI technology
+2025-04-25 20:42:10,158 - news_fetcher - INFO - Retrieved 7 articles for query: AI technology
+2025-04-25 20:42:10,158 - news_fetcher - INFO - Fetching news for query: neural networks
+2025-04-25 20:42:10,438 - news_fetcher - INFO - Retrieved 5 articles for query: neural networks
+2025-04-25 20:42:10,438 - news_fetcher - INFO - Fetching news for query: deep learning
+2025-04-25 20:42:10,720 - news_fetcher - INFO - Retrieved 7 articles for query: deep learning
+2025-04-25 20:42:10,720 - news_fetcher - INFO - Fetching news for query: large language models
+2025-04-25 20:42:11,869 - news_fetcher - INFO - Retrieved 7 articles for query: large language models
+2025-04-25 20:42:11,869 - news_fetcher - INFO - Fetching news for query: generative AI
+2025-04-25 20:42:12,892 - news_fetcher - INFO - Retrieved 7 articles for query: generative AI
+2025-04-25 20:42:12,893 - news_fetcher - INFO - Final article count after filtering: 20
+2025-04-25 20:42:12,898 - news_fetcher - INFO - Saved 20 articles to latest_ai_news.json
+2025-04-25 20:42:12,898 - ai_news_automation - INFO - Fetched 20 articles
+2025-04-25 20:42:12,898 - ai_news_automation - INFO - Step 2: Processing articles with Claude
+2025-04-25 20:42:13,073 - claude_processor - INFO - Loaded 20 articles from latest_ai_news.json
+2025-04-25 20:42:13,073 - claude_processor - INFO - Asking Claude to select top 3 articles from 20 total articles
+2025-04-25 20:42:15,554 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 20:42:15,562 - claude_processor - INFO - Claude selected 3 articles
+2025-04-25 20:42:15,563 - claude_processor - INFO - Asking Claude to format 3 articles into a tweet
+2025-04-25 20:42:24,036 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 20:42:24,038 - claude_processor - INFO - Claude generated tweet text (489 characters)
+2025-04-25 20:42:24,040 - claude_processor - INFO - Saved tweet to tweet_content.txt
+2025-04-25 20:42:24,040 - ai_news_automation - INFO - Generated tweet (489 characters)
+2025-04-25 20:42:24,040 - ai_news_automation - INFO - Step 3: Posting to Twitter
+2025-04-25 20:42:24,041 - twitter_poster - INFO - Read tweet from tweet_content.txt (489 characters)
+2025-04-25 20:42:24,042 - twitter_poster - WARNING - Tweet exceeds 280 characters (489). Truncating...
+2025-04-25 20:42:24,067 - twitter_poster - INFO - Posting tweet to Twitter
+2025-04-25 20:42:24,461 - twitter_poster - INFO - Tweet posted successfully. Tweet ID: 1915718025485180950
+2025-04-25 20:42:24,464 - ai_news_automation - INFO - Posted tweet successfully. Tweet ID: 1915718025485180950
+2025-04-25 20:42:24,465 - ai_news_automation - INFO - AI News Automation completed successfully in 15.23 seconds
+2025-04-25 20:46:26,839 - ai_news_automation - INFO - Starting AI News Automation process
+2025-04-25 20:46:26,839 - ai_news_automation - INFO - Step 1: Fetching news articles
+2025-04-25 20:46:26,924 - news_fetcher - INFO - Fetching news for query: artificial intelligence
+2025-04-25 20:46:27,863 - news_fetcher - INFO - Retrieved 6 articles for query: artificial intelligence
+2025-04-25 20:46:27,863 - news_fetcher - INFO - Fetching news for query: machine learning
+2025-04-25 20:46:28,158 - news_fetcher - INFO - Retrieved 6 articles for query: machine learning
+2025-04-25 20:46:28,158 - news_fetcher - INFO - Fetching news for query: AI technology
+2025-04-25 20:46:29,145 - news_fetcher - INFO - Retrieved 6 articles for query: AI technology
+2025-04-25 20:46:29,145 - news_fetcher - INFO - Fetching news for query: neural networks
+2025-04-25 20:46:30,098 - news_fetcher - INFO - Retrieved 5 articles for query: neural networks
+2025-04-25 20:46:30,099 - news_fetcher - INFO - Fetching news for query: deep learning
+2025-04-25 20:46:31,056 - news_fetcher - INFO - Retrieved 6 articles for query: deep learning
+2025-04-25 20:46:31,056 - news_fetcher - INFO - Fetching news for query: large language models
+2025-04-25 20:46:31,371 - news_fetcher - INFO - Retrieved 6 articles for query: large language models
+2025-04-25 20:46:31,372 - news_fetcher - INFO - Fetching news for query: generative AI
+2025-04-25 20:46:31,669 - news_fetcher - INFO - Retrieved 6 articles for query: generative AI
+2025-04-25 20:46:31,669 - news_fetcher - INFO - Fetching news for query: ChatGPT OR GPT-4
+2025-04-25 20:46:32,613 - news_fetcher - INFO - Retrieved 5 articles for query: ChatGPT OR GPT-4
+2025-04-25 20:46:32,614 - news_fetcher - INFO - Fetching news for query: Claude AI OR Anthropic
+2025-04-25 20:46:32,925 - news_fetcher - INFO - Retrieved 6 articles for query: Claude AI OR Anthropic
+2025-04-25 20:46:32,926 - news_fetcher - INFO - Fetching news for query: OpenAI
+2025-04-25 20:46:33,249 - news_fetcher - INFO - Retrieved 5 articles for query: OpenAI
+2025-04-25 20:46:33,249 - news_fetcher - INFO - Fetching news for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 20:46:33,558 - news_fetcher - INFO - Retrieved 6 articles for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 20:46:33,558 - news_fetcher - INFO - Fetching news for query: Kubernetes AI
+2025-04-25 20:46:33,886 - news_fetcher - INFO - Retrieved 4 articles for query: Kubernetes AI
+2025-04-25 20:46:33,887 - news_fetcher - INFO - Fetching news for query: DevOps AI
+2025-04-25 20:46:34,935 - news_fetcher - INFO - Retrieved 3 articles for query: DevOps AI
+2025-04-25 20:46:34,935 - news_fetcher - INFO - Final article count after filtering: 20
+2025-04-25 20:46:34,940 - news_fetcher - INFO - Saved 20 articles to latest_ai_news.json
+2025-04-25 20:46:34,941 - ai_news_automation - INFO - Fetched 20 articles
+2025-04-25 20:46:34,941 - ai_news_automation - INFO - Step 2: Processing articles with Claude
+2025-04-25 20:46:35,127 - claude_processor - INFO - Loaded 20 articles from latest_ai_news.json
+2025-04-25 20:46:35,127 - claude_processor - INFO - Asking Claude to select top 3 articles from 20 total articles
+2025-04-25 20:46:37,595 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 20:46:37,604 - claude_processor - INFO - Claude selected 3 articles
+2025-04-25 20:46:37,604 - claude_processor - INFO - Asking Claude to format 3 articles into a tweet
+2025-04-25 20:46:45,891 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 20:46:45,893 - claude_processor - INFO - Claude generated tweet text (515 characters)
+2025-04-25 20:46:45,894 - claude_processor - INFO - Saved tweet to tweet_content.txt
+2025-04-25 20:46:45,895 - ai_news_automation - INFO - Generated tweet (515 characters)
+2025-04-25 20:46:45,895 - ai_news_automation - INFO - Step 3: Posting to Twitter
+2025-04-25 20:46:45,896 - twitter_poster - INFO - Read tweet from tweet_content.txt (515 characters)
+2025-04-25 20:46:45,897 - twitter_poster - WARNING - Tweet exceeds 280 characters (515). Truncating...
+2025-04-25 20:46:45,929 - twitter_poster - INFO - Posting tweet to Twitter
+2025-04-25 20:46:46,334 - twitter_poster - INFO - Tweet posted successfully. Tweet ID: 1915719123755233450
+2025-04-25 20:46:46,337 - ai_news_automation - INFO - Posted tweet successfully. Tweet ID: 1915719123755233450
+2025-04-25 20:46:46,337 - ai_news_automation - INFO - AI News Automation completed successfully in 19.50 seconds
+2025-04-25 20:47:49,731 - ai_news_automation - INFO - Starting AI News Automation process
+2025-04-25 20:47:49,731 - ai_news_automation - INFO - Step 1: Fetching news articles
+2025-04-25 20:47:49,815 - news_fetcher - INFO - Fetching news for query: artificial intelligence
+2025-04-25 20:47:50,110 - news_fetcher - INFO - Retrieved 6 articles for query: artificial intelligence
+2025-04-25 20:47:50,110 - news_fetcher - INFO - Fetching news for query: machine learning
+2025-04-25 20:47:51,092 - news_fetcher - INFO - Retrieved 6 articles for query: machine learning
+2025-04-25 20:47:51,092 - news_fetcher - INFO - Fetching news for query: AI technology
+2025-04-25 20:47:51,363 - news_fetcher - INFO - Retrieved 6 articles for query: AI technology
+2025-04-25 20:47:51,363 - news_fetcher - INFO - Fetching news for query: neural networks
+2025-04-25 20:47:51,643 - news_fetcher - INFO - Retrieved 5 articles for query: neural networks
+2025-04-25 20:47:51,644 - news_fetcher - INFO - Fetching news for query: deep learning
+2025-04-25 20:47:52,625 - news_fetcher - INFO - Retrieved 6 articles for query: deep learning
+2025-04-25 20:47:52,625 - news_fetcher - INFO - Fetching news for query: large language models
+2025-04-25 20:47:52,962 - news_fetcher - INFO - Retrieved 6 articles for query: large language models
+2025-04-25 20:47:52,963 - news_fetcher - INFO - Fetching news for query: generative AI
+2025-04-25 20:47:53,252 - news_fetcher - INFO - Retrieved 6 articles for query: generative AI
+2025-04-25 20:47:53,252 - news_fetcher - INFO - Fetching news for query: ChatGPT OR GPT-4
+2025-04-25 20:47:53,529 - news_fetcher - INFO - Retrieved 5 articles for query: ChatGPT OR GPT-4
+2025-04-25 20:47:53,530 - news_fetcher - INFO - Fetching news for query: Claude AI OR Anthropic
+2025-04-25 20:47:53,810 - news_fetcher - INFO - Retrieved 6 articles for query: Claude AI OR Anthropic
+2025-04-25 20:47:53,810 - news_fetcher - INFO - Fetching news for query: OpenAI
+2025-04-25 20:47:54,085 - news_fetcher - INFO - Retrieved 5 articles for query: OpenAI
+2025-04-25 20:47:54,086 - news_fetcher - INFO - Fetching news for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 20:47:54,363 - news_fetcher - INFO - Retrieved 6 articles for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 20:47:54,363 - news_fetcher - INFO - Fetching news for query: Kubernetes AI
+2025-04-25 20:47:54,644 - news_fetcher - INFO - Retrieved 4 articles for query: Kubernetes AI
+2025-04-25 20:47:54,644 - news_fetcher - INFO - Fetching news for query: DevOps AI
+2025-04-25 20:47:54,918 - news_fetcher - INFO - Retrieved 3 articles for query: DevOps AI
+2025-04-25 20:47:54,919 - news_fetcher - INFO - Final article count after filtering: 5
+2025-04-25 20:47:54,923 - news_fetcher - INFO - Saved 5 articles to latest_ai_news.json
+2025-04-25 20:47:54,923 - ai_news_automation - INFO - Fetched 5 articles
+2025-04-25 20:47:54,923 - ai_news_automation - INFO - Step 2: Processing articles with Claude
+2025-04-25 20:47:55,110 - claude_processor - INFO - Loaded 5 articles from latest_ai_news.json
+2025-04-25 20:47:55,110 - claude_processor - INFO - Asking Claude to select top 3 articles from 5 total articles
+2025-04-25 20:47:57,095 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 20:47:57,103 - claude_processor - INFO - Claude selected 3 articles
+2025-04-25 20:47:57,103 - claude_processor - INFO - Asking Claude to format 3 articles into a tweet
+2025-04-25 20:48:05,521 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 20:48:05,524 - claude_processor - INFO - Claude generated tweet text (199 characters)
+2025-04-25 20:48:05,527 - claude_processor - INFO - Saved tweet to tweet_content.txt
+2025-04-25 20:48:05,527 - ai_news_automation - INFO - Generated tweet (199 characters)
+2025-04-25 20:48:05,527 - ai_news_automation - INFO - Step 3: Posting to Twitter
+2025-04-25 20:48:05,529 - twitter_poster - INFO - Read tweet from tweet_content.txt (199 characters)
+2025-04-25 20:48:05,561 - twitter_poster - INFO - Posting tweet to Twitter
+2025-04-25 20:48:05,926 - twitter_poster - INFO - Tweet posted successfully. Tweet ID: 1915719457785483661
+2025-04-25 20:48:05,929 - ai_news_automation - INFO - Posted tweet successfully. Tweet ID: 1915719457785483661
+2025-04-25 20:48:05,931 - ai_news_automation - INFO - AI News Automation completed successfully in 16.20 seconds
+2025-04-25 20:50:51,507 - ai_news_automation - INFO - Starting AI News Automation process
+2025-04-25 20:50:51,508 - ai_news_automation - INFO - Step 1: Fetching news articles
+2025-04-25 20:50:51,597 - news_fetcher - INFO - Fetching news for query: artificial intelligence
+2025-04-25 20:50:52,521 - news_fetcher - INFO - Retrieved 6 articles for query: artificial intelligence
+2025-04-25 20:50:52,521 - news_fetcher - INFO - Fetching news for query: machine learning
+2025-04-25 20:50:52,797 - news_fetcher - INFO - Retrieved 6 articles for query: machine learning
+2025-04-25 20:50:52,797 - news_fetcher - INFO - Fetching news for query: AI technology
+2025-04-25 20:50:53,736 - news_fetcher - INFO - Retrieved 6 articles for query: AI technology
+2025-04-25 20:50:53,737 - news_fetcher - INFO - Fetching news for query: neural networks
+2025-04-25 20:50:54,724 - news_fetcher - INFO - Retrieved 5 articles for query: neural networks
+2025-04-25 20:50:54,725 - news_fetcher - INFO - Fetching news for query: deep learning
+2025-04-25 20:50:55,001 - news_fetcher - INFO - Retrieved 6 articles for query: deep learning
+2025-04-25 20:50:55,001 - news_fetcher - INFO - Fetching news for query: large language models
+2025-04-25 20:50:55,280 - news_fetcher - INFO - Retrieved 6 articles for query: large language models
+2025-04-25 20:50:55,280 - news_fetcher - INFO - Fetching news for query: generative AI
+2025-04-25 20:50:56,218 - news_fetcher - INFO - Retrieved 6 articles for query: generative AI
+2025-04-25 20:50:56,218 - news_fetcher - INFO - Fetching news for query: ChatGPT OR GPT-4
+2025-04-25 20:50:57,155 - news_fetcher - INFO - Retrieved 5 articles for query: ChatGPT OR GPT-4
+2025-04-25 20:50:57,156 - news_fetcher - INFO - Fetching news for query: Claude AI OR Anthropic
+2025-04-25 20:50:57,431 - news_fetcher - INFO - Retrieved 6 articles for query: Claude AI OR Anthropic
+2025-04-25 20:50:57,432 - news_fetcher - INFO - Fetching news for query: OpenAI
+2025-04-25 20:50:58,410 - news_fetcher - INFO - Retrieved 5 articles for query: OpenAI
+2025-04-25 20:50:58,410 - news_fetcher - INFO - Fetching news for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 20:50:58,683 - news_fetcher - INFO - Retrieved 6 articles for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 20:50:58,683 - news_fetcher - INFO - Fetching news for query: Kubernetes AI
+2025-04-25 20:50:58,958 - news_fetcher - INFO - Retrieved 4 articles for query: Kubernetes AI
+2025-04-25 20:50:58,958 - news_fetcher - INFO - Fetching news for query: DevOps AI
+2025-04-25 20:50:59,239 - news_fetcher - INFO - Retrieved 3 articles for query: DevOps AI
+2025-04-25 20:50:59,241 - news_fetcher - INFO - Final article count after filtering: 5
+2025-04-25 20:50:59,246 - news_fetcher - INFO - Saved 5 articles to latest_ai_news.json
+2025-04-25 20:50:59,246 - ai_news_automation - INFO - Fetched 5 articles
+2025-04-25 20:50:59,246 - ai_news_automation - INFO - Step 2: Processing articles with Claude
+2025-04-25 20:50:59,432 - claude_processor - INFO - Loaded 5 articles from latest_ai_news.json
+2025-04-25 20:50:59,432 - claude_processor - INFO - Asking Claude to select top 3 articles from 5 total articles
+2025-04-25 20:51:03,232 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 20:51:03,242 - claude_processor - INFO - Claude selected 3 articles
+2025-04-25 20:51:03,242 - claude_processor - INFO - Asking Claude to format 3 articles into a tweet
+2025-04-25 20:51:12,513 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 20:51:12,516 - claude_processor - INFO - Claude generated tweet text (175 characters)
+2025-04-25 20:51:12,518 - claude_processor - INFO - Saved tweet to tweet_content.txt
+2025-04-25 20:51:12,519 - ai_news_automation - INFO - Generated tweet (175 characters)
+2025-04-25 20:51:12,519 - ai_news_automation - INFO - Step 3: Posting to Twitter
+2025-04-25 20:51:12,521 - twitter_poster - INFO - Read tweet from tweet_content.txt (175 characters)
+2025-04-25 20:51:12,548 - twitter_poster - INFO - Posting tweet to Twitter
+2025-04-25 20:51:12,927 - twitter_poster - INFO - Tweet posted successfully. Tweet ID: 1915720242132902105
+2025-04-25 20:51:12,929 - ai_news_automation - INFO - Posted tweet successfully. Tweet ID: 1915720242132902105
+2025-04-25 20:51:12,930 - ai_news_automation - INFO - AI News Automation completed successfully in 21.42 seconds
+2025-04-25 21:07:09,532 - ai_news_automation - INFO - Starting AI News Automation process
+2025-04-25 21:07:09,532 - ai_news_automation - INFO - Step 1: Fetching news articles
+2025-04-25 21:07:09,579 - news_fetcher - INFO - Fetching news for query: artificial intelligence
+2025-04-25 21:07:10,537 - news_fetcher - INFO - Retrieved 6 articles for query: artificial intelligence
+2025-04-25 21:07:10,538 - news_fetcher - INFO - Fetching news for query: machine learning
+2025-04-25 21:07:10,840 - news_fetcher - INFO - Retrieved 6 articles for query: machine learning
+2025-04-25 21:07:10,840 - news_fetcher - INFO - Fetching news for query: AI technology
+2025-04-25 21:07:11,780 - news_fetcher - INFO - Retrieved 6 articles for query: AI technology
+2025-04-25 21:07:11,780 - news_fetcher - INFO - Fetching news for query: neural networks
+2025-04-25 21:07:12,075 - news_fetcher - INFO - Retrieved 5 articles for query: neural networks
+2025-04-25 21:07:12,075 - news_fetcher - INFO - Fetching news for query: deep learning
+2025-04-25 21:07:12,380 - news_fetcher - INFO - Retrieved 6 articles for query: deep learning
+2025-04-25 21:07:12,381 - news_fetcher - INFO - Fetching news for query: large language models
+2025-04-25 21:07:13,384 - news_fetcher - INFO - Retrieved 6 articles for query: large language models
+2025-04-25 21:07:13,384 - news_fetcher - INFO - Fetching news for query: generative AI
+2025-04-25 21:07:13,705 - news_fetcher - INFO - Retrieved 6 articles for query: generative AI
+2025-04-25 21:07:13,705 - news_fetcher - INFO - Fetching news for query: ChatGPT OR GPT-4
+2025-04-25 21:07:14,002 - news_fetcher - INFO - Retrieved 5 articles for query: ChatGPT OR GPT-4
+2025-04-25 21:07:14,002 - news_fetcher - INFO - Fetching news for query: Claude AI OR Anthropic
+2025-04-25 21:07:14,961 - news_fetcher - INFO - Retrieved 6 articles for query: Claude AI OR Anthropic
+2025-04-25 21:07:14,962 - news_fetcher - INFO - Fetching news for query: OpenAI
+2025-04-25 21:07:15,256 - news_fetcher - INFO - Retrieved 5 articles for query: OpenAI
+2025-04-25 21:07:15,257 - news_fetcher - INFO - Fetching news for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 21:07:16,223 - news_fetcher - INFO - Retrieved 6 articles for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 21:07:16,223 - news_fetcher - INFO - Fetching news for query: Kubernetes AI
+2025-04-25 21:07:16,546 - news_fetcher - INFO - Retrieved 4 articles for query: Kubernetes AI
+2025-04-25 21:07:16,547 - news_fetcher - INFO - Fetching news for query: DevOps AI
+2025-04-25 21:07:16,833 - news_fetcher - INFO - Retrieved 3 articles for query: DevOps AI
+2025-04-25 21:07:16,834 - news_fetcher - INFO - Final article count after filtering: 5
+2025-04-25 21:07:16,838 - news_fetcher - INFO - Saved 5 articles to latest_ai_news.json
+2025-04-25 21:07:16,838 - ai_news_automation - INFO - Fetched 5 articles
+2025-04-25 21:07:16,838 - ai_news_automation - INFO - Step 2: Processing articles with Claude
+2025-04-25 21:07:17,020 - claude_processor - INFO - Loaded 5 articles from latest_ai_news.json
+2025-04-25 21:07:17,020 - claude_processor - INFO - Asking Claude to select top 3 articles from 5 total articles
+2025-04-25 21:07:18,713 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:07:18,724 - claude_processor - INFO - Claude selected 3 articles
+2025-04-25 21:07:18,725 - claude_processor - INFO - Asking Claude to format 3 articles into a tweet
+2025-04-25 21:07:28,262 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:07:28,265 - claude_processor - INFO - Claude generated tweet text (199 characters)
+2025-04-25 21:07:28,266 - claude_processor - INFO - Saved tweet to tweet_content.txt
+2025-04-25 21:07:28,266 - ai_news_automation - INFO - Generated tweet (199 characters)
+2025-04-25 21:07:28,266 - ai_news_automation - INFO - Step 3: Posting to Twitter
+2025-04-25 21:07:28,269 - twitter_poster - INFO - Read tweet from tweet_content.txt (199 characters)
+2025-04-25 21:07:28,303 - twitter_poster - INFO - Posting tweet to Twitter
+2025-04-25 21:07:28,734 - twitter_poster - INFO - Tweet posted successfully. Tweet ID: 1915724335089856579
+2025-04-25 21:07:28,739 - ai_news_automation - INFO - Posted tweet successfully. Tweet ID: 1915724335089856579
+2025-04-25 21:07:28,741 - ai_news_automation - INFO - AI News Automation completed successfully in 19.21 seconds
+2025-04-25 21:17:07,658 - enhanced_ai_news_automation - INFO - Starting Enhanced AI News Automation process
+2025-04-25 21:17:07,659 - enhanced_ai_news_automation - INFO - Step 1a: Fetching news articles from NewsAPI
+2025-04-25 21:17:07,736 - news_fetcher - INFO - Fetching news for query: artificial intelligence
+2025-04-25 21:17:08,704 - news_fetcher - INFO - Retrieved 5 articles for query: artificial intelligence
+2025-04-25 21:17:08,704 - news_fetcher - INFO - Fetching news for query: machine learning
+2025-04-25 21:17:09,653 - news_fetcher - INFO - Retrieved 5 articles for query: machine learning
+2025-04-25 21:17:09,653 - news_fetcher - INFO - Fetching news for query: AI technology
+2025-04-25 21:17:10,671 - news_fetcher - INFO - Retrieved 5 articles for query: AI technology
+2025-04-25 21:17:10,672 - news_fetcher - INFO - Fetching news for query: neural networks
+2025-04-25 21:17:10,964 - news_fetcher - INFO - Retrieved 5 articles for query: neural networks
+2025-04-25 21:17:10,964 - news_fetcher - INFO - Fetching news for query: deep learning
+2025-04-25 21:17:12,003 - news_fetcher - INFO - Retrieved 5 articles for query: deep learning
+2025-04-25 21:17:12,004 - news_fetcher - INFO - Fetching news for query: large language models
+2025-04-25 21:17:12,958 - news_fetcher - INFO - Retrieved 5 articles for query: large language models
+2025-04-25 21:17:12,958 - news_fetcher - INFO - Fetching news for query: generative AI
+2025-04-25 21:17:13,906 - news_fetcher - INFO - Retrieved 5 articles for query: generative AI
+2025-04-25 21:17:13,907 - news_fetcher - INFO - Fetching news for query: ChatGPT OR GPT-4
+2025-04-25 21:17:14,200 - news_fetcher - INFO - Retrieved 4 articles for query: ChatGPT OR GPT-4
+2025-04-25 21:17:14,200 - news_fetcher - INFO - Fetching news for query: Claude AI OR Anthropic
+2025-04-25 21:17:14,491 - news_fetcher - INFO - Retrieved 5 articles for query: Claude AI OR Anthropic
+2025-04-25 21:17:14,492 - news_fetcher - INFO - Fetching news for query: OpenAI
+2025-04-25 21:17:15,437 - news_fetcher - INFO - Retrieved 4 articles for query: OpenAI
+2025-04-25 21:17:15,437 - news_fetcher - INFO - Fetching news for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 21:17:15,736 - news_fetcher - INFO - Retrieved 5 articles for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 21:17:15,736 - news_fetcher - INFO - Fetching news for query: Kubernetes AI
+2025-04-25 21:17:16,050 - news_fetcher - INFO - Retrieved 4 articles for query: Kubernetes AI
+2025-04-25 21:17:16,051 - news_fetcher - INFO - Fetching news for query: DevOps AI
+2025-04-25 21:17:16,331 - news_fetcher - INFO - Retrieved 3 articles for query: DevOps AI
+2025-04-25 21:17:16,332 - news_fetcher - INFO - Final article count after filtering: 5
+2025-04-25 21:17:16,335 - news_fetcher - INFO - Saved 5 articles to newsapi_articles.json
+2025-04-25 21:17:16,335 - enhanced_ai_news_automation - INFO - Fetched 5 articles from NewsAPI
+2025-04-25 21:17:16,335 - enhanced_ai_news_automation - INFO - Step 1b: Scraping news from AI company blogs
+2025-04-25 21:17:16,378 - enhanced_ai_news_automation - ERROR - Error in Enhanced AI News Automation: cannot import name 'AIBlogScraper' from 'ai_blog_scraper_improved' (/Users/apatil/ai_news_automation/ai_blog_scraper_improved.py)
+2025-04-25 21:23:15,714 - enhanced_ai_news_automation - INFO - Starting Enhanced AI News Automation process
+2025-04-25 21:23:15,715 - enhanced_ai_news_automation - INFO - Step 1a: Fetching news articles from NewsAPI
+2025-04-25 21:23:15,759 - news_fetcher - INFO - Fetching news for query: artificial intelligence
+2025-04-25 21:23:16,727 - news_fetcher - INFO - Retrieved 5 articles for query: artificial intelligence
+2025-04-25 21:23:16,727 - news_fetcher - INFO - Fetching news for query: machine learning
+2025-04-25 21:23:17,770 - news_fetcher - INFO - Retrieved 5 articles for query: machine learning
+2025-04-25 21:23:17,770 - news_fetcher - INFO - Fetching news for query: AI technology
+2025-04-25 21:23:18,065 - news_fetcher - INFO - Retrieved 5 articles for query: AI technology
+2025-04-25 21:23:18,065 - news_fetcher - INFO - Fetching news for query: neural networks
+2025-04-25 21:23:18,370 - news_fetcher - INFO - Retrieved 5 articles for query: neural networks
+2025-04-25 21:23:18,370 - news_fetcher - INFO - Fetching news for query: deep learning
+2025-04-25 21:23:19,319 - news_fetcher - INFO - Retrieved 5 articles for query: deep learning
+2025-04-25 21:23:19,319 - news_fetcher - INFO - Fetching news for query: large language models
+2025-04-25 21:23:20,269 - news_fetcher - INFO - Retrieved 5 articles for query: large language models
+2025-04-25 21:23:20,270 - news_fetcher - INFO - Fetching news for query: generative AI
+2025-04-25 21:23:21,257 - news_fetcher - INFO - Retrieved 5 articles for query: generative AI
+2025-04-25 21:23:21,257 - news_fetcher - INFO - Fetching news for query: ChatGPT OR GPT-4
+2025-04-25 21:23:22,227 - news_fetcher - INFO - Retrieved 4 articles for query: ChatGPT OR GPT-4
+2025-04-25 21:23:22,227 - news_fetcher - INFO - Fetching news for query: Claude AI OR Anthropic
+2025-04-25 21:23:23,255 - news_fetcher - INFO - Retrieved 5 articles for query: Claude AI OR Anthropic
+2025-04-25 21:23:23,255 - news_fetcher - INFO - Fetching news for query: OpenAI
+2025-04-25 21:23:23,544 - news_fetcher - INFO - Retrieved 4 articles for query: OpenAI
+2025-04-25 21:23:23,544 - news_fetcher - INFO - Fetching news for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 21:23:23,838 - news_fetcher - INFO - Retrieved 5 articles for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 21:23:23,838 - news_fetcher - INFO - Fetching news for query: Kubernetes AI
+2025-04-25 21:23:24,159 - news_fetcher - INFO - Retrieved 4 articles for query: Kubernetes AI
+2025-04-25 21:23:24,160 - news_fetcher - INFO - Fetching news for query: DevOps AI
+2025-04-25 21:23:24,463 - news_fetcher - INFO - Retrieved 3 articles for query: DevOps AI
+2025-04-25 21:23:24,464 - news_fetcher - INFO - Final article count after filtering: 5
+2025-04-25 21:23:24,468 - news_fetcher - INFO - Saved 5 articles to newsapi_articles.json
+2025-04-25 21:23:24,468 - enhanced_ai_news_automation - INFO - Fetched 5 articles from NewsAPI
+2025-04-25 21:23:24,468 - enhanced_ai_news_automation - INFO - Step 1b: Scraping news from AI company blogs with improved scraper
+2025-04-25 21:23:24,514 - ai_blog_scraper_improved - INFO - Scraping OpenAI blog at https://openai.com/blog
+2025-04-25 21:23:28,357 - ai_blog_scraper_improved - INFO - Found 0 article elements on OpenAI blog
+2025-04-25 21:23:28,357 - ai_blog_scraper_improved - INFO - Added 0 articles from OpenAI
+2025-04-25 21:23:28,357 - ai_blog_scraper_improved - INFO - Scraping Microsoft AI blog at https://blogs.microsoft.com/ai/
+2025-04-25 21:23:33,012 - ai_blog_scraper_improved - INFO - Attempting to fetch RSS feed for Microsoft AI from https://blogs.microsoft.com/ai/feed/
+2025-04-25 21:23:33,284 - ai_blog_scraper_improved - INFO - Retrieved 2 articles from Microsoft AI RSS feed
+2025-04-25 21:23:33,284 - ai_blog_scraper_improved - INFO - Added 2 articles from Microsoft AI RSS feed
+2025-04-25 21:23:33,284 - ai_blog_scraper_improved - INFO - Scraping Google AI blog at https://ai.googleblog.com/
+2025-04-25 21:23:36,109 - ai_blog_scraper_improved - INFO - Attempting to fetch RSS feed for Google AI from http://ai.googleblog.com/feeds/posts/default
+2025-04-25 21:23:36,513 - ai_blog_scraper_improved - WARNING - No entries found in RSS feed for Google AI
+2025-04-25 21:23:39,406 - ai_blog_scraper_improved - INFO - Found 0 article elements on Google AI blog
+2025-04-25 21:23:39,406 - ai_blog_scraper_improved - INFO - Added 0 articles from Google AI
+2025-04-25 21:23:39,406 - ai_blog_scraper_improved - INFO - Scraping Anthropic blog at https://www.anthropic.com/news
+2025-04-25 21:23:47,962 - ai_blog_scraper_improved - INFO - Found 113 article elements on Anthropic blog
+2025-04-25 21:23:51,885 - ai_blog_scraper_improved - INFO - Added 2 articles from Anthropic
+2025-04-25 21:23:51,885 - ai_blog_scraper_improved - INFO - Scraping Hugging Face blog at https://huggingface.co/blog
+2025-04-25 21:23:57,106 - ai_blog_scraper_improved - INFO - Found 23 article elements on Hugging Face blog
+2025-04-25 21:23:57,108 - ai_blog_scraper_improved - INFO - Added 0 articles from Hugging Face
+2025-04-25 21:23:57,108 - ai_blog_scraper_improved - INFO - Scraping Meta AI blog at https://ai.meta.com/blog/
+2025-04-25 21:24:00,822 - ai_blog_scraper_improved - INFO - Attempting to fetch RSS feed for Meta AI from https://ai.meta.com/blog/rss/
+2025-04-25 21:24:01,520 - ai_blog_scraper_improved - WARNING - No entries found in RSS feed for Meta AI
+2025-04-25 21:24:01,768 - ai_blog_scraper_improved - ERROR - Error fetching Meta AI blog: 400 Client Error: Bad Request for url: https://ai.meta.com/blog/
+2025-04-25 21:24:01,768 - ai_blog_scraper_improved - INFO - Scraped a total of 4 articles from all blogs
+2025-04-25 21:24:01,768 - enhanced_ai_news_automation - INFO - Scraped 4 articles from AI company blogs
+2025-04-25 21:24:01,770 - enhanced_ai_news_automation - INFO - Combined 5 NewsAPI articles with 4 scraped articles, resulting in 9 unique articles
+2025-04-25 21:24:01,770 - enhanced_ai_news_automation - INFO - Step 2: Processing articles with Claude
+2025-04-25 21:24:01,976 - claude_processor - INFO - Loaded 9 articles from latest_ai_news.json
+2025-04-25 21:24:01,976 - claude_processor - INFO - Asking Claude to select top 3 articles from 9 total articles
+2025-04-25 21:24:03,870 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:24:03,885 - claude_processor - INFO - Claude selected 3 articles
+2025-04-25 21:24:03,886 - claude_processor - INFO - Asking Claude to format 3 articles into a tweet
+2025-04-25 21:24:08,434 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:24:08,436 - claude_processor - INFO - Claude generated tweet text (297 characters)
+2025-04-25 21:24:08,439 - claude_processor - INFO - Saved tweet to tweet_content.txt
+2025-04-25 21:24:08,439 - enhanced_ai_news_automation - INFO - Generated tweet (297 characters)
+2025-04-25 21:24:08,439 - enhanced_ai_news_automation - INFO - Step 3: Posting to Twitter
+2025-04-25 21:24:08,490 - tweepy_twitter_poster - INFO - Tweepy client initialized successfully
+2025-04-25 21:24:08,490 - tweepy_twitter_poster - INFO - Read tweet from tweet_content.txt (297 characters)
+2025-04-25 21:24:08,490 - tweepy_twitter_poster - WARNING - Tweet exceeds 280 characters (297). Truncating...
+2025-04-25 21:24:08,490 - tweepy_twitter_poster - INFO - Posting tweet to Twitter using Tweepy
+2025-04-25 21:24:08,874 - tweepy_twitter_poster - INFO - Tweet posted successfully. Tweet ID: 1915728530144714975
+2025-04-25 21:24:08,874 - enhanced_ai_news_automation - INFO - Posted tweet successfully using Tweepy. Tweet ID: 1915728530144714975
+2025-04-25 21:24:08,875 - enhanced_ai_news_automation - INFO - Enhanced AI News Automation completed successfully in 53.16 seconds
+2025-04-25 21:31:40,783 - final_ai_news_automation - INFO - Starting Final Enhanced AI News Automation process
+2025-04-25 21:31:40,783 - final_ai_news_automation - INFO - Step 1a: Fetching news articles from NewsAPI
+2025-04-25 21:31:40,784 - news_fetcher - INFO - Fetching news for query: artificial intelligence
+2025-04-25 21:31:41,747 - news_fetcher - INFO - Retrieved 5 articles for query: artificial intelligence
+2025-04-25 21:31:41,748 - news_fetcher - INFO - Fetching news for query: machine learning
+2025-04-25 21:31:42,705 - news_fetcher - INFO - Retrieved 5 articles for query: machine learning
+2025-04-25 21:31:42,705 - news_fetcher - INFO - Fetching news for query: AI technology
+2025-04-25 21:31:43,729 - news_fetcher - INFO - Retrieved 5 articles for query: AI technology
+2025-04-25 21:31:43,729 - news_fetcher - INFO - Fetching news for query: neural networks
+2025-04-25 21:31:44,034 - news_fetcher - INFO - Retrieved 5 articles for query: neural networks
+2025-04-25 21:31:44,034 - news_fetcher - INFO - Fetching news for query: deep learning
+2025-04-25 21:31:44,989 - news_fetcher - INFO - Retrieved 5 articles for query: deep learning
+2025-04-25 21:31:44,990 - news_fetcher - INFO - Fetching news for query: large language models
+2025-04-25 21:31:45,286 - news_fetcher - INFO - Retrieved 5 articles for query: large language models
+2025-04-25 21:31:45,286 - news_fetcher - INFO - Fetching news for query: generative AI
+2025-04-25 21:31:46,280 - news_fetcher - INFO - Retrieved 5 articles for query: generative AI
+2025-04-25 21:31:46,280 - news_fetcher - INFO - Fetching news for query: ChatGPT OR GPT-4
+2025-04-25 21:31:47,224 - news_fetcher - INFO - Retrieved 4 articles for query: ChatGPT OR GPT-4
+2025-04-25 21:31:47,224 - news_fetcher - INFO - Fetching news for query: Claude AI OR Anthropic
+2025-04-25 21:31:47,523 - news_fetcher - INFO - Retrieved 5 articles for query: Claude AI OR Anthropic
+2025-04-25 21:31:47,524 - news_fetcher - INFO - Fetching news for query: OpenAI
+2025-04-25 21:31:47,815 - news_fetcher - INFO - Retrieved 4 articles for query: OpenAI
+2025-04-25 21:31:47,816 - news_fetcher - INFO - Fetching news for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 21:31:48,110 - news_fetcher - INFO - Retrieved 5 articles for query: Microsoft AI OR Microsoft Copilot
+2025-04-25 21:31:48,110 - news_fetcher - INFO - Fetching news for query: Kubernetes AI
+2025-04-25 21:31:48,436 - news_fetcher - INFO - Retrieved 4 articles for query: Kubernetes AI
+2025-04-25 21:31:48,437 - news_fetcher - INFO - Fetching news for query: DevOps AI
+2025-04-25 21:31:48,730 - news_fetcher - INFO - Retrieved 3 articles for query: DevOps AI
+2025-04-25 21:31:48,731 - news_fetcher - INFO - Final article count after filtering: 5
+2025-04-25 21:31:48,735 - news_fetcher - INFO - Saved 5 articles to newsapi_articles.json
+2025-04-25 21:31:48,735 - final_ai_news_automation - INFO - Fetched 5 articles from NewsAPI
+2025-04-25 21:31:48,736 - final_ai_news_automation - INFO - Step 1b: Scraping news from AI company blogs with improved scraper
+2025-04-25 21:31:48,737 - final_ai_news_automation - INFO - Using improved blog scraper with RSS support
+2025-04-25 21:31:48,737 - ai_blog_scraper_improved - INFO - Scraping OpenAI blog at https://openai.com/blog
+2025-04-25 21:31:52,786 - ai_blog_scraper_improved - INFO - Found 0 article elements on OpenAI blog
+2025-04-25 21:31:52,786 - ai_blog_scraper_improved - INFO - Added 0 articles from OpenAI
+2025-04-25 21:31:52,786 - ai_blog_scraper_improved - INFO - Scraping Microsoft AI blog at https://blogs.microsoft.com/ai/
+2025-04-25 21:31:54,832 - ai_blog_scraper_improved - INFO - Attempting to fetch RSS feed for Microsoft AI from https://blogs.microsoft.com/ai/feed/
+2025-04-25 21:31:55,087 - ai_blog_scraper_improved - INFO - Retrieved 2 articles from Microsoft AI RSS feed
+2025-04-25 21:31:55,087 - ai_blog_scraper_improved - INFO - Added 2 articles from Microsoft AI RSS feed
+2025-04-25 21:31:55,087 - ai_blog_scraper_improved - INFO - Scraping Google AI blog at https://ai.googleblog.com/
+2025-04-25 21:31:57,481 - ai_blog_scraper_improved - INFO - Attempting to fetch RSS feed for Google AI from http://ai.googleblog.com/feeds/posts/default
+2025-04-25 21:31:57,842 - ai_blog_scraper_improved - WARNING - No entries found in RSS feed for Google AI
+2025-04-25 21:31:59,815 - ai_blog_scraper_improved - INFO - Found 0 article elements on Google AI blog
+2025-04-25 21:31:59,815 - ai_blog_scraper_improved - INFO - Added 0 articles from Google AI
+2025-04-25 21:31:59,815 - ai_blog_scraper_improved - INFO - Scraping Anthropic blog at https://www.anthropic.com/news
+2025-04-25 21:32:07,042 - ai_blog_scraper_improved - INFO - Found 113 article elements on Anthropic blog
+2025-04-25 21:32:14,891 - ai_blog_scraper_improved - INFO - Added 2 articles from Anthropic
+2025-04-25 21:32:14,891 - ai_blog_scraper_improved - INFO - Scraping Hugging Face blog at https://huggingface.co/blog
+2025-04-25 21:32:18,197 - ai_blog_scraper_improved - INFO - Found 23 article elements on Hugging Face blog
+2025-04-25 21:32:18,198 - ai_blog_scraper_improved - INFO - Added 0 articles from Hugging Face
+2025-04-25 21:32:18,198 - ai_blog_scraper_improved - INFO - Scraping Meta AI blog at https://ai.meta.com/blog/
+2025-04-25 21:32:21,630 - ai_blog_scraper_improved - INFO - Attempting to fetch RSS feed for Meta AI from https://ai.meta.com/blog/rss/
+2025-04-25 21:32:22,247 - ai_blog_scraper_improved - WARNING - No entries found in RSS feed for Meta AI
+2025-04-25 21:32:22,489 - ai_blog_scraper_improved - ERROR - Error fetching Meta AI blog: 400 Client Error: Bad Request for url: https://ai.meta.com/blog/
+2025-04-25 21:32:22,489 - ai_blog_scraper_improved - INFO - Scraped a total of 4 articles from all blogs
+2025-04-25 21:32:22,489 - final_ai_news_automation - INFO - Scraped 4 articles from AI company blogs
+2025-04-25 21:32:22,494 - final_ai_news_automation - INFO - Combined 5 NewsAPI articles with 4 scraped articles, resulting in 9 unique articles
+2025-04-25 21:32:22,494 - final_ai_news_automation - INFO - Step 2: Processing articles with Claude
+2025-04-25 21:32:22,533 - claude_processor - INFO - Loaded 9 articles from latest_ai_news.json
+2025-04-25 21:32:22,533 - claude_processor - INFO - Asking Claude to select top 3 articles from 9 total articles
+2025-04-25 21:32:24,987 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:32:25,003 - claude_processor - INFO - Claude selected 3 articles
+2025-04-25 21:32:25,003 - claude_processor - INFO - Asking Claude to format 3 articles into a tweet
+2025-04-25 21:32:29,838 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:32:29,840 - claude_processor - INFO - Claude generated tweet text (344 characters)
+2025-04-25 21:32:29,842 - claude_processor - INFO - Saved tweet to tweet_content.txt
+2025-04-25 21:32:29,843 - final_ai_news_automation - INFO - Generated tweet (344 characters)
+2025-04-25 21:32:29,843 - final_ai_news_automation - INFO - Step 2b: Formatting tweet and validating links
+2025-04-25 21:32:29,851 - tweet_formatter - INFO - Read tweet from tweet_content.txt (344 characters)
+2025-04-25 21:32:29,852 - tweet_formatter - INFO - Formatting tweet (344 characters)
+2025-04-25 21:32:30,506 - tweet_formatter - INFO - Valid link: https://cnet.co/3LeSyYA
+2025-04-25 21:32:31,470 - tweet_formatter - WARNING - Invalid link (status 404): https://forbes.com/chrome-ai-acquisition
+2025-04-25 21:32:33,645 - tweet_formatter - WARNING - Invalid link (status 404): https://anthropic.com/claude-mar25
+2025-04-25 21:32:33,653 - tweet_formatter - INFO - Formatted tweet (267 characters)
+2025-04-25 21:32:33,654 - tweet_formatter - INFO - Updated tweet_content.txt with formatted tweet
+2025-04-25 21:32:33,655 - final_ai_news_automation - INFO - Formatted tweet (267 characters)
+2025-04-25 21:32:33,655 - final_ai_news_automation - INFO - Step 3: Posting to Twitter
+2025-04-25 21:32:33,657 - tweepy_twitter_poster - INFO - Tweepy client initialized successfully
+2025-04-25 21:32:33,658 - tweepy_twitter_poster - INFO - Read tweet from tweet_content.txt (267 characters)
+2025-04-25 21:32:33,658 - tweepy_twitter_poster - INFO - Posting tweet to Twitter using Tweepy
+2025-04-25 21:32:34,074 - tweepy_twitter_poster - INFO - Tweet posted successfully. Tweet ID: 1915730649111278049
+2025-04-25 21:32:34,074 - final_ai_news_automation - INFO - Posted tweet successfully using Tweepy. Tweet ID: 1915730649111278049
+2025-04-25 21:32:34,076 - final_ai_news_automation - INFO - Final Enhanced AI News Automation completed successfully in 53.29 seconds

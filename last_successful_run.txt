@@ -1,0 +1,4 @@
+Last successful run: 2025-04-25 21:32:34
+Tweet ID: 1915730649111278049
+Tweet content: Adobe Firefly integrates ChatGPT, Veo 2 & Imagen 3, plus new AI models. OpenAI & Perplexity eye Google Chrome acquisition. Anthropic shares update on detecting misuse of Claude AI. https://cnet. co/3LeSyYA #AI #TechNews #AdobeFirefly #ChatGPT #GoogleChrome #Anthropic
+Sources: NewsAPI (5 articles) and AI company blogs (4 articles)

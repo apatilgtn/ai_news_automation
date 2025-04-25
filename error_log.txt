@@ -1,0 +1,1 @@
+Error on 2025-04-25 21:17:16: cannot import name 'AIBlogScraper' from 'ai_blog_scraper_improved' (/Users/apatil/ai_news_automation/ai_blog_scraper_improved.py)

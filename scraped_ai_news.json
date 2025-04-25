@@ -1,0 +1,56 @@
+[
+  {
+    "source": {
+      "name": "Microsoft AI"
+    },
+    "title": "A conversation with Kevin Scott: What’s next in AI",
+    "url": "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/",
+    "publishedAt": "Tue, 06 Dec 2022 17:29:09 +0000",
+    "description": "The post A conversation with Kevin Scott: What’s next in AI appeared first on The AI Blog."
+  },
+  {
+    "source": {
+      "name": "Microsoft AI"
+    },
+    "title": "From Hot Wheels to handling content: How brands are using Microsoft AI to be more productive and imaginative",
+    "url": "https://blogs.microsoft.com/ai/from-hot-wheels-to-handling-content-how-brands-are-using-microsoft-ai-to-be-more-productive-and-imaginative/",
+    "publishedAt": "Wed, 12 Oct 2022 16:00:02 +0000",
+    "description": "The post From Hot Wheels to handling content: How brands are using Microsoft AI to be more productive and imaginative appeared first on The AI Blog."
+  },
+  {
+    "source": {
+      "name": "Microsoft AI"
+    },
+    "title": "Microsoft open sources its ‘farm of the future’ toolkit",
+    "url": "https://blogs.microsoft.com/ai/microsoft-open-sources-its-farm-of-the-future-toolkit/",
+    "publishedAt": "Thu, 06 Oct 2022 14:58:15 +0000",
+    "description": "The post Microsoft open sources its ‘farm of the future’ toolkit appeared first on The AI Blog."
+  },
+  {
+    "source": {
+      "name": "Anthropic"
+    },
+    "title": "Detecting and Countering Malicious Uses of Claude: March 2025",
+    "url": "https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025",
+    "publishedAt": "2025-04-25",
+    "description": "Detecting and Countering Malicious Uses of Claude"
+  },
+  {
+    "source": {
+      "name": "Anthropic"
+    },
+    "title": "Our Approach to Understanding and Addressing AI Harms",
+    "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
+    "publishedAt": "2025-04-25",
+    "description": "Learn about Anthropic's comprehensive framework for identifying, classifying, and mitigating potential harms from AI systems, ensuring responsible development of advanced AI technology."
+  },
+  {
+    "source": {
+      "name": "Anthropic"
+    },
+    "title": "Claude takes research to new places",
+    "url": "https://www.anthropic.com/news/research",
+    "publishedAt": "2025-04-25",
+    "description": "Today, we’re introducing two new capabilities that make Claude a more informed and capable collaborator — Research and a Google Workspace integration that connects your email, calendar and documents to Claude. With Research, Claude can search across both your internal work context and the web to help you make decisions and take action faster than before."
+  }
+]
